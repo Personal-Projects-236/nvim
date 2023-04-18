@@ -7,3 +7,4 @@ require("settings")
 
 -- to run autoclose on startup
 require("autoclose").setup()
+require("config/coq").setup()
