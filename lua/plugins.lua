@@ -15,4 +15,8 @@ packer.startup(function()
 	use({"ms-jpq/coq.artifacts", branch = "artifacts"})
 	use({"ms-jpq/coq.thirdparty", branch = "3p"})
 	use('folke/tokyonight.nvim') -- Color Scheme
+	use {
+	  'nvim-lualine/lualine.nvim',
+	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+	}
 end)
