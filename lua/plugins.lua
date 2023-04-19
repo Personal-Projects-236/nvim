@@ -1,3 +1,5 @@
+require('./config/plugins/tokyonight')
+
 local packer = require("packer")
 
 vim.cmd([[packadd packer.nvim]])
@@ -12,4 +14,5 @@ packer.startup(function()
 	})
 	use({"ms-jpq/coq.artifacts", branch = "artifacts"})
 	use({"ms-jpq/coq.thirdparty", branch = "3p"})
+	use('folke/tokyonight.nvim') -- Color Scheme
 end)

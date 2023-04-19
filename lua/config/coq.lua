@@ -1,5 +1,7 @@
 local M = {}
 
+-- This function activates coq_nvim on file startup
+
 function M.setup()
 	local coq = require('coq')
 	coq.Now()
