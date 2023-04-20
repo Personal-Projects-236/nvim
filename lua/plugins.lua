@@ -14,6 +14,8 @@ packer.startup(function()
 	})
 	use({"ms-jpq/coq.artifacts", branch = "artifacts"})
 	use({"ms-jpq/coq.thirdparty", branch = "3p"})
+	use("ryanoasis/nerd-fonts")
+	use("nvim-tree/nvim-web-devicons")
 	use('folke/tokyonight.nvim') -- Color Scheme
 	use {
 	  'nvim-lualine/lualine.nvim',
@@ -28,4 +30,13 @@ packer.startup(function()
 		 	}
 		end,
 	})
+	use {
+  		'nvim-tree/nvim-tree.lua',
+  		requires = {
+			'nvim-tree/nvim-web-devicons', -- optional
+  		},
+  		config = function()
+    				require("nvim-tree").setup {}
+  			end
+	}
 end)
