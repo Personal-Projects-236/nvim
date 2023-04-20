@@ -43,4 +43,7 @@ packer.startup(function()
     			require('gitsigns').setup()
   		end
 	}
+	use('nvim-lua/plenary.nvim')
+	use('epwalsh/obsidian.nvim')
+	use('hrsh7th/nvim-cmp')
 end)

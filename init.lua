@@ -29,3 +29,9 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+require("obsidian").setup({
+  dir = "~/.config/nvim/my-vault",
+  completion = {
+    nvim_cmp = true, -- if using nvim-cmp, otherwise set to false
+  }
+})
