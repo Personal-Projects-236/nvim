@@ -44,6 +44,8 @@ packer.startup(function()
   		end
 	}
 	use('nvim-lua/plenary.nvim')
-	use('epwalsh/obsidian.nvim')
-	use('hrsh7th/nvim-cmp')
+	use {
+    		'renerocksai/telekasten.nvim',
+    		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
+  	}
 end)

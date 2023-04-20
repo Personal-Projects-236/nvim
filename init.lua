@@ -29,9 +29,6 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
-require("obsidian").setup({
-  dir = "~/.config/nvim/my-vault",
-  completion = {
-    nvim_cmp = true, -- if using nvim-cmp, otherwise set to false
-  }
+require('telekasten').setup({
+  home = vim.fn.expand("~/.config/nvim/notebook"), -- Put the name of your notes directory here
 })
