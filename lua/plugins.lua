@@ -48,4 +48,5 @@ packer.startup(function()
     		'renerocksai/telekasten.nvim',
     		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
   	}
+	use('kazhala/close-buffers.nvim')
 end)
