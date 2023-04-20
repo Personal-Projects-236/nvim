@@ -36,4 +36,5 @@ packer.startup(function()
 			'nvim-tree/nvim-web-devicons', -- optional
   		},
 	}
+	use('voldikss/vim-floaterm') 
 end)
