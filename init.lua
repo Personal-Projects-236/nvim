@@ -29,6 +29,12 @@ require("nvim-tree").setup({
     dotfiles = true,
   },
 })
+local home = vim.fn.expand("~/.config/nvim/notebook")
 require('telekasten').setup({
-  home = vim.fn.expand("~/.config/nvim/notebook"), -- Put the name of your notes directory here
+  home = home,
+  -- dir names for special notes (absolute path or subdir name)
+  dailies      = home .. '/' .. 'daily',
+  weeklies     = home .. '/' .. 'weekly',
+  templates    = home .. '/' .. 'templates',
+  template_new_daily = home .. '/' .. 'templates/daily.md',
 })
