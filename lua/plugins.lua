@@ -49,4 +49,8 @@ packer.startup(function()
     		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
   	}
 	use('kazhala/close-buffers.nvim')
+	use({
+		'prettier/vim-prettier',
+		pattern = {"*.js", "*.jsx", "*.html", "*.css", "*.lua", "*.ts", "*.tsx", "*.sass"}
+	})
 end)
