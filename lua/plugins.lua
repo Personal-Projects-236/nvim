@@ -53,4 +53,20 @@ packer.startup(function()
 		'prettier/vim-prettier',
 		pattern = {"*.js", "*.jsx", "*.html", "*.css", "*.lua", "*.ts", "*.tsx", "*.sass"}
 	})
+	use({ 
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+		ft = { "markdown" }, })
+	use {
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo-comments").setup {
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			}
+		end
+	}
 end)
