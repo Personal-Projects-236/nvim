@@ -21,3 +21,9 @@ mappings("n", "<leader>zt", "<cmd>Telekasten toggle_todo<CR>")
 
 -- Call insert link automatically when we start typing a link
 mappings("i", "[[", "<cmd>Telekasten insert_link<CR>")
+
+-- mapping to easily switch between window panes
+mappings("n", "<c-h>", "<c-w>h<CR>")
+mappings("n", "<c-j>", "<c-w>j<CR>")
+mappings("n", "<c-k>", "<c-w>k<CR>")
+mappings("n", "<c-l>", "<c-w>l<CR>")
