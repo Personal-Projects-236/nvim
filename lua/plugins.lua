@@ -69,4 +69,5 @@ packer.startup(function()
 			}
 		end
 	}
+	use 'SidOfc/mkdx'
 end)

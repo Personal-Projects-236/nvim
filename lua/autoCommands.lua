@@ -2,7 +2,10 @@ local auto = vim.api.nvim_create_autocmd
 
 -- auto({"InsertLeave"}, {command = "w"})
 auto({"BufLeave"}, {command = "BDelete hidden"})
-auto({"BufWritePost"}, {command = "PrettierAsync"})
+auto({"BufWritePost"}, {
+	pattern = {"*.js", ".jsx", "*.ts", "*.tsx", "*.html", "*.css", "*.sass"},
+	command = "PrettierAsync"
+})
 
 -- Spelling in markdown files}
 auto({"BufRead","BufNewFile"}, {
