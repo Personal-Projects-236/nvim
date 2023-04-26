@@ -69,5 +69,26 @@ packer.startup(function()
 			}
 		end
 	}
-	use 'SidOfc/mkdx'
+	-- markdown language support
+	use({
+			"iamcco/markdown-preview.nvim",
+			pattern = {"*.md"},
+			run = function() vim.fn["mkdp#util#install"]() end,
+	})
+	use({'jakewvincent/mkdnflow.nvim', {
+		pattern = {"*.md"},
+		config = function()
+				require('mkdnflow').setup({
+						-- Config goes here; leave blank for defaults
+						to_do = {
+							symbols = {' ', 'P', 'D'},
+							update_parents = true,
+							not_started = ' ',
+							in_progress = 'P',
+							complete = 'D'
+						}
+					})
+			end
+		}
+	})
 end)

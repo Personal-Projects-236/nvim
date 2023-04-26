@@ -1,4 +1,5 @@
 local mappings = vim.keymap.set
+local auto = vim.api.nvim_create_autocmd
 
 mappings('n', '<Leader>m', ':NvimTreeToggle<CR>') -- This will toggle the tree explorer`
 mappings('n', 'Q', ':q<CR>') -- this will quit the terminal
@@ -27,3 +28,12 @@ mappings("n", "<c-h>", "<c-w>h<CR>")
 mappings("n", "<c-j>", "<c-w>j<CR>")
 mappings("n", "<c-k>", "<c-w>k<CR>")
 mappings("n", "<c-l>", "<c-w>l<CR>")
+
+-- mappings to execute the filetype that you are busy with
+-- executes a markdown file only in the filetype markdown
+auto({"FileType"}, {
+	pattern = {"md", "markdown"},
+	callback = function()
+		mappings("n", "<C-t>", ":MarkdownPreview<CR>")
+	end
+})
