@@ -82,4 +82,5 @@ packer.startup(function()
 		"Galooshi/vim-import-js",
 		pattern = {"*.js"}
 	})
+	use({"Shatur/neovim-session-manager"})
 end)
