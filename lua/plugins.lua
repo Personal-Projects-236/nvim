@@ -78,4 +78,8 @@ packer.startup(function()
 		pattern = {"*.md"}
 		}
 	})
+	use({
+		"Galooshi/vim-import-js",
+		pattern = {"*.js"}
+	})
 end)

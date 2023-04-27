@@ -1,10 +1,15 @@
 local auto = vim.api.nvim_create_autocmd
 
--- auto({"InsertLeave"}, {command = "w"})
 auto({"BufLeave"}, {command = "BDelete hidden"})
-auto({"BufWritePost"}, {
-	pattern = {"*.js", ".jsx", "*.ts", "*.tsx", "*.html", "*.css", "*.sass"},
+auto({"FocusLost"}, {
+	pattern = {"*.js", ".jsx", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
 	command = "PrettierAsync"
+})
+
+-- auto commands for javascript files
+auto({"TextChanged"}, {
+	pattern = {"*.js", "*.jsx"},
+	command = "ImportJSFix"
 })
 
 -- Spelling in markdown files}
