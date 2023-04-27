@@ -37,3 +37,10 @@ auto({"FileType"}, {
 		mappings("n", "<C-t>", ":MarkdownPreview<CR>")
 	end
 })
+-- executes a javascript file only in javascript
+auto({"FileType"}, {
+	pattern = {"js", "javascript"},
+	callback = function()
+		mappings("n", "<C-t>", ":!node %<CR>")
+	end
+})
