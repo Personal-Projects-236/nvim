@@ -5,6 +5,7 @@ auto({"FocusLost"}, {
 	pattern = {"*.js", ".jsx", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
 	command = "PrettierAsync"
 })
+auto({"VimLeavePre"}, {command = "NvimTreeClose"})
 
 -- auto commands for javascript files
 auto({"TextChanged"}, {

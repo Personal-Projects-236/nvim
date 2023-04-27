@@ -82,5 +82,13 @@ packer.startup(function()
 		"Galooshi/vim-import-js",
 		pattern = {"*.js"}
 	})
-	use({"Shatur/neovim-session-manager"})
+	use {
+		'rmagatti/auto-session',
+		config = function()
+			require("auto-session").setup {
+				log_level = "error",
+				auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+			}
+		end
+	}
 end)
