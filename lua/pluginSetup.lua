@@ -30,3 +30,13 @@ require('telekasten').setup({
   template_new_daily = journal .. '/' .. 'templates/daily.md',
 	template_new_note = journal .. '/' .. 'templates/new_note.md'
 })
+
+require('mkdnflow').setup({
+	to_do = {
+		symbols = {' ', 'P', 'D'},
+		update_parents = true,
+		not_started = ' ',
+		in_progress = 'P',
+		complete = 'D'
+	}
+})
