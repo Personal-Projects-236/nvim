@@ -33,11 +33,11 @@ require('telekasten').setup({
 
 require('mkdnflow').setup({
 	to_do = {
-		symbols = {' ', 'P', 'D'},
+		symbols = {' ', '-', 'X'},
 		update_parents = true,
 		not_started = ' ',
-		in_progress = 'P',
-		complete = 'D'
+		in_progress = '-',
+		complete = 'X'
 	}
 })
 

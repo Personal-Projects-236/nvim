@@ -74,10 +74,7 @@ packer.startup(function()
 			"iamcco/markdown-preview.nvim",
 			run = function() vim.fn["mkdp#util#install"]() end,
 	})
-	use({'jakewvincent/mkdnflow.nvim', {
-		pattern = {"*.md"}
-		}
-	})
+	use({'jakewvincent/mkdnflow.nvim'})
 	use({
 		"Galooshi/vim-import-js",
 		pattern = {"*.js"}
