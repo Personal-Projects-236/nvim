@@ -52,3 +52,5 @@ require("auto-session").setup {
     end,
   },
 }
+
+require("stay-centered")

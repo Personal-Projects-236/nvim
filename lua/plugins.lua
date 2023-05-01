@@ -90,4 +90,5 @@ packer.startup(function()
 			}
 		end
 	}
+	use "arnamak/stay-centered.nvim"
 end)
