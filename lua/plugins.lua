@@ -69,6 +69,11 @@ packer.startup(function()
 			}
 		end
 	}
+	use({
+		"kristijanhusak/vim-js-file-import",
+		requires = {"ludovicchabant/vim-gutentags"},
+		pattern = {"*.js", "*.mjs", "*.jsx"}
+	})
 	-- markdown language support
 	use({
 			"iamcco/markdown-preview.nvim",

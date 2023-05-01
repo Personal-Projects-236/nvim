@@ -8,9 +8,10 @@ auto({"FocusLost"}, {
 auto({"VimLeavePre"}, {command = "NvimTreeClose"})
 
 -- auto commands for javascript files
+-- this will fix all imports on js, jsx and mjs files
 auto({"TextChanged"}, {
-	pattern = {"*.js", "*.jsx"},
-	command = "ImportJSFix"
+	pattern = {"*.js", "*.jsx", "*.mjs"},
+	command = "JsFixImport"
 })
 
 -- Spelling in markdown files}
