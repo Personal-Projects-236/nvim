@@ -2,7 +2,7 @@ local auto = vim.api.nvim_create_autocmd
 
 auto({"BufLeave"}, {command = "BDelete hidden"})
 auto({"FocusLost"}, {
-	pattern = {"*.js", ".jsx", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
+	pattern = {"*.js", ".jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
 	command = "PrettierAsync"
 })
 auto({"VimLeavePre"}, {command = "NvimTreeClose"})

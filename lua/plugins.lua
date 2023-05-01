@@ -51,7 +51,7 @@ packer.startup(function()
 	use('kazhala/close-buffers.nvim')
 	use({
 		'prettier/vim-prettier',
-		pattern = {"*.js", "*.jsx", "*.html", "*.css", "*.lua", "*.ts", "*.tsx", "*.sass"}
+		pattern = {"*.js", "*.jsx","*.mjs", "*.html", "*.css", "*.lua", "*.ts", "*.tsx", "*.sass"}
 	})
 	use({ 
 		"iamcco/markdown-preview.nvim",
@@ -75,10 +75,7 @@ packer.startup(function()
 			run = function() vim.fn["mkdp#util#install"]() end,
 	})
 	use({'jakewvincent/mkdnflow.nvim'})
-	use({
-		"Galooshi/vim-import-js",
-		pattern = {"*.js"}
-	})
+
 	use {
 		'rmagatti/auto-session',
 		config = function()
