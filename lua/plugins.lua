@@ -7,11 +7,14 @@ vim.cmd([[packadd packer.nvim]])
 packer.startup(function()
 	-- Plugins are listed here
 	use("wbthomason/packer.nvim")
-	use {
-		"windwp/nvim-autopairs",
-			config = function() 
-				require("nvim-autopairs").setup {} 
-			end
+	use{
+			'altermo/ultimate-autopair.nvim',
+			event={'InsertEnter','CmdlineEnter'},
+			config=function ()
+					require('ultimate-autopair').setup({
+									--Config goes here
+									})
+			end,
 	}
 	use({
 	       "ms-jpq/coq_nvim",
