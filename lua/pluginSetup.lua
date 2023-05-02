@@ -7,6 +7,9 @@ require('lualine').setup {
     -- ... your lualine config
   }
 }
+require('nvim-ts-autotag').setup({
+  filetypes = { "html" , "xml", "markdown", "javascriptreact" },
+})
 require("nvim-tree").setup({
   sort_by = "case_sensitive",
   renderer = {
