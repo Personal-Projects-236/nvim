@@ -7,6 +7,7 @@ vim.cmd([[packadd packer.nvim]])
 packer.startup(function()
 	-- Plugins are listed here
 	use("wbthomason/packer.nvim")
+	-- Plugin for auto pairing pairs together
 	use{
 			'altermo/ultimate-autopair.nvim',
 			event={'InsertEnter','CmdlineEnter'},
@@ -16,6 +17,10 @@ packer.startup(function()
 									})
 			end,
 	}
+	use({
+		"windwp/nvim-ts-autotag",
+		requires = "nvim-treesitter/nvim-treesitter"
+	})
 	use({
 	       "ms-jpq/coq_nvim",
 	       branch = "coq",
