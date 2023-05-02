@@ -7,7 +7,12 @@ vim.cmd([[packadd packer.nvim]])
 packer.startup(function()
 	-- Plugins are listed here
 	use("wbthomason/packer.nvim")
-	use("m4xshen/autoclose.nvim")
+	use {
+		"windwp/nvim-autopairs",
+			config = function() 
+				require("nvim-autopairs").setup {} 
+			end
+	}
 	use({
 	       "ms-jpq/coq_nvim",
 	       branch = "coq",
@@ -69,11 +74,10 @@ packer.startup(function()
 			}
 		end
 	}
-	use({
-		"kristijanhusak/vim-js-file-import",
-		requires = {"ludovicchabant/vim-gutentags"},
-		pattern = {"*.js", "*.mjs", "*.jsx"}
+	use({"kristijanhusak/vim-js-file-import"}, {
+		requires = "ludovicchabant/vim-gutentags"
 	})
+	use("tomarrell/vim-npr")
 	-- markdown language support
 	use({
 			"iamcco/markdown-preview.nvim",
@@ -91,4 +95,10 @@ packer.startup(function()
 		end
 	}
 	use "arnamak/stay-centered.nvim"
+	use({
+		"nvim-telescope/telescope.nvim",
+		requires = "nvim-lua/plenary.nvim"
+	})
+	use({"aca/emmet-ls"})
+	use({"neovim/nvim-lspconfig"})
 end)
