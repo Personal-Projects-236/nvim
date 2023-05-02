@@ -1,4 +1,5 @@
 local mappings = vim.keymap.set
+local auto = vim.api.nvim_create_autocmd
 
 mappings('n', '<Leader>m', ':NvimTreeToggle<CR>') -- This will toggle the tree explorer`
 mappings('n', 'Q', ':q<CR>') -- this will quit the terminal
@@ -21,3 +22,25 @@ mappings("n", "<leader>zt", "<cmd>Telekasten toggle_todo<CR>")
 
 -- Call insert link automatically when we start typing a link
 mappings("i", "[[", "<cmd>Telekasten insert_link<CR>")
+
+-- mappings to execute the filetype that you are busy with
+-- executes a markdown file only in the filetype markdown
+auto({"FileType"}, {
+	pattern = {"md", "markdown"},
+	callback = function()
+		mappings("n", "<C-t>", ":MarkdownPreview<CR>")
+	end
+})
+-- executes a javascript file only in javascript
+auto({"FileType"}, {
+	pattern = {"js", "javascript"},
+	callback = function()
+		mappings("n", "<C-t>", ":!node %<CR>")
+	end
+})
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})

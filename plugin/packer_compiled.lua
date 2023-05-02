@@ -80,10 +80,11 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/auto-save.nvim",
     url = "https://github.com/Pocco81/auto-save.nvim"
   },
-  ["autoclose.nvim"] = {
+  ["auto-session"] = {
+    config = { "\27LJ\2\n”\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\31auto_session_suppress_dirs\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\1\0\1\14log_level\nerror\nsetup\17auto-session\frequire\0" },
     loaded = true,
-    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/autoclose.nvim",
-    url = "https://github.com/m4xshen/autoclose.nvim"
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/auto-session",
+    url = "https://github.com/rmagatti/auto-session"
   },
   ["calendar-vim"] = {
     loaded = true,
@@ -110,6 +111,11 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
+  ["emmet-ls"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/emmet-ls",
+    url = "https://github.com/aca/emmet-ls"
+  },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
@@ -121,10 +127,33 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/opt/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
+  ["mkdnflow.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/mkdnflow.nvim",
+    url = "https://github.com/jakewvincent/mkdnflow.nvim"
+  },
   ["nerd-fonts"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/nerd-fonts",
     url = "https://github.com/ryanoasis/nerd-fonts"
+  },
+  ["nvim-autopairs"] = {
+    config = { "\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0" },
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -146,6 +175,11 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["stay-centered.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/stay-centered.nvim",
+    url = "https://github.com/arnamak/stay-centered.nvim"
+  },
   ["telekasten.nvim"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/telekasten.nvim",
@@ -156,6 +190,12 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    config = { "\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0" },
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
   ["tokyonight.nvim"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
@@ -165,18 +205,56 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
+  },
+  ["vim-js-file-import"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-js-file-import",
+    url = "https://github.com/kristijanhusak/vim-js-file-import"
+  },
+  ["vim-npr"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-npr",
+    url = "https://github.com/tomarrell/vim-npr"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: auto-save.nvim
-time([[Config for auto-save.nvim]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
-time([[Config for auto-save.nvim]], false)
+-- Setup for: markdown-preview.nvim
+time([[Setup for markdown-preview.nvim]], true)
+try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
+time([[Setup for markdown-preview.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
 time([[Config for gitsigns.nvim]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
+-- Config for: auto-session
+time([[Config for auto-session]], true)
+try_loadstring("\27LJ\2\n”\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\31auto_session_suppress_dirs\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\1\0\1\14log_level\nerror\nsetup\17auto-session\frequire\0", "config", "auto-session")
+time([[Config for auto-session]], false)
+-- Config for: auto-save.nvim
+time([[Config for auto-save.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
+time([[Config for auto-save.nvim]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
