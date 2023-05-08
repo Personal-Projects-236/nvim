@@ -3,6 +3,11 @@ local auto = vim.api.nvim_create_autocmd
 auto({"BufLeave"}, {command = "BDelete hidden"})
 
 -- auto commands for javascript files
+auto({"BufWritePost"}, {
+	pattern = {"*.js", "*.jsx", "*.mjs"},
+	command = "JsFixImport"
+})
+
 auto({"FocusLost", "VimLeavePre", "BufWinLeave"}, {
 	pattern = {"*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
 	command = "PrettierAsync"
