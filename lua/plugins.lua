@@ -21,6 +21,10 @@ packer.startup(function()
 		"windwp/nvim-ts-autotag",
 		requires = "nvim-treesitter/nvim-treesitter"
 	})
+	use {
+   		'renerocksai/telekasten.nvim',
+   		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
+  }
 	use({
 	       "ms-jpq/coq_nvim",
 	       branch = "coq",
@@ -57,10 +61,6 @@ packer.startup(function()
   		end
 	}
 	use('nvim-lua/plenary.nvim')
-	use {
-    		'renerocksai/telekasten.nvim',
-    		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
-  	}
 	use('kazhala/close-buffers.nvim')
 	use({
 		'prettier/vim-prettier',

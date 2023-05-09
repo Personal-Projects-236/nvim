@@ -25,6 +25,7 @@ local journal = vim.fn.expand("~/.config/nvim/notebook")
 
 require('telekasten').setup({
   home = home,
+	image_subdir = home,
   -- dir names for special notes (absolute path or subdir name)
   dailies      = journal .. '/' .. 'daily',
   weeklies     = journal .. '/' .. 'weekly',
