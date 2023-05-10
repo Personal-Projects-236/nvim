@@ -1,0 +1,53 @@
+# arrow functions
+snippet arf
+alias arrow function
+	const ${1:variable} = (${2:parameters}) => {
+		${0:body}
+	}
+
+# console
+snippet console.log
+alias log
+	console.log(${0})
+
+# exports
+snippet exc
+alias export const
+	export const ${1:variable} = (${2:parameters}) => {
+		${0:body}
+	}
+
+snippet exd
+alias export default
+	const ${1} = (${2}) => {
+		return (
+			${3}
+		)
+	}
+
+	export default ${0}
+
+# Fancy comments
+snippet TODO
+alias todo
+	// TODO:
+
+snippet NOTE
+alias note
+	// NOTE:
+
+snippet FIX
+alias fix
+	// FIX:
+
+snippet HACK
+alias hack
+	// HACK:
+
+snippet WARN
+alias warn
+	// WARN:
+
+snippet PERF
+alias perf
+	// PERF:

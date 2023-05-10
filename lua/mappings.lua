@@ -5,6 +5,9 @@ mappings('n', '<Leader>m', ':NvimTreeToggle<CR>') -- This will toggle the tree e
 mappings('n', 'Q', ':q<CR>') -- this will quit the terminal
 mappings('n', 'W', ':qall<CR>') -- this quits all terminals
 mappings('n', '<c-g>', ':FloatermNew --width=1.0 --height=1.0 --autoclose=2 lazygit<CR>')
+mappings('n', '<c-s>', ':COQsnips edit<CR>')
+mappings('n', 'T', ':TodoTelescope keywords=TODO,PERF,HACK,NOTE,FIX,WARN<CR>')
+mappings('n', 'F', ':JsFixImport<CR>')
 
 -- Launch panel if nothing is typed after <leader>z
 mappings("n", "<leader>z", "<cmd>Telekasten panel<CR>")
