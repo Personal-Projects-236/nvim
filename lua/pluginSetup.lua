@@ -78,3 +78,5 @@ lspconfig.emmet_ls.setup({
       },
     }
 })
+
+require('nvim_comment').setup()
