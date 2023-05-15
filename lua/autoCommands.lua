@@ -37,3 +37,5 @@ autocmd FileType markdown,rmarkdown,vimwiki
       \ autocmd CompleteChanged * silent! iunmap <CR>| 
       \ autocmd CompleteDone * inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>
 ]]
+
+cmd[[autocmd VimEnter * silent :PackerSync]]
