@@ -110,4 +110,9 @@ packer.startup(function()
 	use({"aca/emmet-ls"})
 	use({"neovim/nvim-lspconfig"})
 	use "terrortylor/nvim-comment"
+	-- prisma files
+	use({
+		"prisma/vim-prisma",
+		pattern = "*.prisma"
+	})
 end)
