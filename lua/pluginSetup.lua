@@ -1,4 +1,3 @@
-require("config/coq").setup()
 require("nvim-web-devicons").setup()
 require('lualine').setup {
   options = {

@@ -96,25 +96,160 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/close-buffers.nvim",
     url = "https://github.com/kazhala/close-buffers.nvim"
   },
+  ["coc-css"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-css",
+    url = "https://github.com/neoclide/coc-css"
+  },
+  ["coc-cssmodules"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-cssmodules",
+    url = "https://github.com/antonk52/coc-cssmodules"
+  },
+  ["coc-docker"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-docker",
+    url = "https://github.com/josa42/coc-docker"
+  },
+  ["coc-explorer"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-explorer",
+    url = "https://github.com/weirongxu/coc-explorer"
+  },
+  ["coc-git"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-git",
+    url = "https://github.com/neoclide/coc-git"
+  },
+  ["coc-html"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-html",
+    url = "https://github.com/neoclide/coc-html"
+  },
+  ["coc-html-css-support"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-html-css-support",
+    url = "https://github.com/yaegassy/coc-html-css-support"
+  },
+  ["coc-htmldjango"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-htmldjango",
+    url = "https://github.com/yaegassy/coc-htmldjango"
+  },
+  ["coc-htmlhint"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-htmlhint",
+    url = "https://github.com/yaegassy/coc-htmlhint"
+  },
+  ["coc-jedi"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-jedi",
+    url = "https://github.com/pappasam/coc-jedi"
+  },
+  ["coc-json"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-json",
+    url = "https://github.com/neoclide/coc-json"
+  },
+  ["coc-lightbulb"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-lightbulb",
+    url = "https://github.com/xiyaowong/coc-lightbulb"
+  },
+  ["coc-lua"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-lua",
+    url = "https://github.com/josa42/coc-lua"
+  },
+  ["coc-markdown-preview-enhanced"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-markdown-preview-enhanced",
+    url = "https://github.com/weirongxu/coc-markdown-preview-enhanced"
+  },
+  ["coc-markdownlint"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-markdownlint",
+    url = "https://github.com/fannheyward/coc-markdownlint"
+  },
+  ["coc-markmap"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-markmap",
+    url = "https://github.com/markmap/coc-markmap"
+  },
   ["coc-prisma"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-prisma",
     url = "https://github.com/pantharshit00/coc-prisma"
   },
-  ["coq.artifacts"] = {
+  ["coc-pydocstring"] = {
     loaded = true,
-    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coq.artifacts",
-    url = "https://github.com/ms-jpq/coq.artifacts"
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-pydocstring",
+    url = "https://github.com/yaegassy/coc-pydocstring"
   },
-  ["coq.thirdparty"] = {
+  ["coc-pylsp"] = {
     loaded = true,
-    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
-    url = "https://github.com/ms-jpq/coq.thirdparty"
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-pylsp",
+    url = "https://github.com/yaegassy/coc-pylsp"
   },
-  coq_nvim = {
+  ["coc-pyright"] = {
     loaded = true,
-    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coq_nvim",
-    url = "https://github.com/ms-jpq/coq_nvim"
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-pyright",
+    url = "https://github.com/fannheyward/coc-pyright"
+  },
+  ["coc-rome"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-rome",
+    url = "https://github.com/fannheyward/coc-rome"
+  },
+  ["coc-ruff"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-ruff",
+    url = "https://github.com/yaegassy/coc-ruff"
+  },
+  ["coc-sh"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-sh",
+    url = "https://github.com/josa42/coc-sh"
+  },
+  ["coc-snippets"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-snippets",
+    url = "https://github.com/neoclide/coc-snippets"
+  },
+  ["coc-spell-checker"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-spell-checker",
+    url = "https://github.com/iamcco/coc-spell-checker"
+  },
+  ["coc-sql"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-sql",
+    url = "https://github.com/fannheyward/coc-sql"
+  },
+  ["coc-sqlfluff"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-sqlfluff",
+    url = "https://github.com/yaegassy/coc-sqlfluff"
+  },
+  ["coc-stylua"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-stylua",
+    url = "https://github.com/xiyaowong/coc-stylua"
+  },
+  ["coc-sumneko-lua"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-sumneko-lua",
+    url = "https://github.com/xiyaowong/coc-sumneko-lua"
+  },
+  ["coc-tsserver"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc-tsserver",
+    url = "https://github.com/neoclide/coc-tsserver"
+  },
+  ["coc.nvim"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/coc.nvim",
+    url = "https://github.com/neoclide/coc.nvim"
   },
   ["emmet-ls"] = {
     loaded = true,
@@ -126,6 +261,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ltex = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/ltex",
+    url = "https://github.com/valentjn/ltex"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -242,11 +382,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
-  },
-  ["vim-prisma"] = {
-    loaded = true,
-    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-prisma",
-    url = "https://github.com/prisma/vim-prisma"
   }
 }
 
@@ -255,6 +390,14 @@ time([[Defining packer_plugins]], false)
 time([[Setup for markdown-preview.nvim]], true)
 try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\0\1\2\0\0\rmarkdown\19mkdp_filetypes\6g\bvim\0", "setup", "markdown-preview.nvim")
 time([[Setup for markdown-preview.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
+time([[Config for todo-comments.nvim]], false)
 -- Config for: auto-session
 time([[Config for auto-session]], true)
 try_loadstring("\27LJ\2\n”\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\31auto_session_suppress_dirs\1\5\0\0\a~/\15~/Projects\16~/Downloads\6/\1\0\1\14log_level\nerror\nsetup\17auto-session\frequire\0", "config", "auto-session")
@@ -263,14 +406,6 @@ time([[Config for auto-session]], false)
 time([[Config for auto-save.nvim]], true)
 try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14auto-save\frequire\0", "config", "auto-save.nvim")
 time([[Config for auto-save.nvim]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
@@ -279,8 +414,8 @@ vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-prev
 time([[Defining lazy-load filetype autocommands]], false)
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au CmdlineEnter * ++once lua require("packer.load")({'ultimate-autopair.nvim'}, { event = "CmdlineEnter *" }, _G.packer_plugins)]]
 vim.cmd [[au InsertEnter * ++once lua require("packer.load")({'ultimate-autopair.nvim'}, { event = "InsertEnter *" }, _G.packer_plugins)]]
+vim.cmd [[au CmdlineEnter * ++once lua require("packer.load")({'ultimate-autopair.nvim'}, { event = "CmdlineEnter *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 
