@@ -115,4 +115,8 @@ packer.startup(function()
 		"prisma/vim-prisma",
 		pattern = "*.prisma"
 	})
+	use({
+		"pantharshit00/coc-prisma",
+		pattern = "*.prisma"
+	})
 end)
