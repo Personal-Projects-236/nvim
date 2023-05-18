@@ -32,6 +32,42 @@ auto({"BufRead","BufNewFile"}, {
 })
 
 cmd[[
+let g:coc_global_extensions = [
+		\ "coc-css",
+		\ "coc-cssmodules",
+		\ "coc-docker",
+		\ "coc-explorer",
+		\ "coc-git",
+		\ "coc-html",
+		\ "coc-htmldjango",
+		\ "coc-htmlhint",
+		\ "coc-html-css-support",
+		\ "coc-jedi",
+		\ "coc-json",
+		\ "coc-lightbulb",
+		\ "coc-ltex",
+		\ "coc-lua",
+		\ "coc-markdownlint",
+		\ "coc-markdown-preview-enhanced",
+		\ "coc-markmap",
+		\ "coc-prisma",
+		\ "coc-pydocstring",
+		\ "@yaegassy/coc-pylsp",
+		\ "coc-pyright",
+		\ "coc-rome",
+		\ "@yaegassy/coc-ruff",
+		\ "coc-sh",
+		\ "coc-snippets",
+		\ "coc-spell-checker",
+		\ "coc-sql",
+		\ "coc-sqlfluff",
+		\ "coc-stylua",
+		\ "coc-sumneko-lua",
+		\ "coc-tsserver"
+\ ]
+]]
+
+cmd[[
 autocmd FileType markdown,rmarkdown,vimwiki 
       \ inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>| 
       \ autocmd CompleteChanged * silent! iunmap <CR>| 

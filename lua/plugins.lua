@@ -27,44 +27,6 @@ packer.startup(function()
   }
 	-- NOTE: completion engine
 	use { 'neoclide/coc.nvim', branch='release' }
-	-- NOTE: coc plugins
-	use({
-		"neoclide/coc-css",
-		pattern = {"*.css", "*.sass", "*.less"}
-	})
-	use({
-		"antonk52/coc-cssmodules",
-		pattern = {"*.module.css"}
-	})
-	use("josa42/coc-docker")
-	use("weirongxu/coc-explorer")
-	use("neoclide/coc-git")
-	use("neoclide/coc-html")
-	use("yaegassy/coc-htmldjango")
-	use("yaegassy/coc-htmlhint")
-	use("yaegassy/coc-html-css-support")
-	use("pappasam/coc-jedi")
-	use("neoclide/coc-json")
-	use("xiyaowong/coc-lightbulb")
-	use("valentjn/ltex")
-	use("josa42/coc-lua")
-	use("fannheyward/coc-markdownlint")
-	use("weirongxu/coc-markdown-preview-enhanced")
-	use("markmap/coc-markmap")
-	use("pantharshit00/coc-prisma")
-	use("yaegassy/coc-pydocstring")
-	use("yaegassy/coc-pylsp")
-	use("fannheyward/coc-pyright")
-	use("fannheyward/coc-rome")
-	use("yaegassy/coc-ruff")
-	use("josa42/coc-sh")
-	use("neoclide/coc-snippets")
-	use("iamcco/coc-spell-checker")
-	use("fannheyward/coc-sql")
-	use("yaegassy/coc-sqlfluff")
-	use("xiyaowong/coc-stylua")
-	use("xiyaowong/coc-sumneko-lua")
-	use("neoclide/coc-tsserver")
 	-- NOTE: icons in neovim
 	use("ryanoasis/nerd-fonts")
 	use("nvim-tree/nvim-web-devicons")
