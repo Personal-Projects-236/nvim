@@ -47,7 +47,6 @@ let g:coc_global_extensions = [
 		\ "coc-lightbulb",
 		\ "coc-ltex",
 		\ "coc-lua",
-		\ "coc-markdownlint",
 		\ "coc-markdown-preview-enhanced",
 		\ "coc-markmap",
 		\ "coc-prisma",
@@ -58,10 +57,8 @@ let g:coc_global_extensions = [
 		\ "@yaegassy/coc-ruff",
 		\ "coc-sh",
 		\ "coc-snippets",
-		\ "coc-spell-checker",
 		\ "coc-sql",
 		\ "coc-sqlfluff",
-		\ "coc-stylua",
 		\ "coc-sumneko-lua",
 		\ "coc-tsserver"
 \ ]
