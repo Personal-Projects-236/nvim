@@ -20,9 +20,6 @@
 	"eslint.packageManager": "yarn",
 	"eslint.nodePath": ".yarn/sdks",
 	"workspace.workspaceFolderCheckCwd": false,
-  "tsserver.tsdk": ".yarn/sdks/typescript/lib",
-  "cSpell.userWords": [
-    "Neovim",
-    "autocommand"
-  ]
+	"tsserver.tsdk": ".yarn/sdks/typescript/lib",
+	"cSpell.userWords": ["Neovim", "autocommand"]
 }

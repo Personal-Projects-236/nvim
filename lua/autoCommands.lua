@@ -16,7 +16,6 @@ auto({"FocusLost", "VimLeavePre", "BufWinLeave"}, {
 
 auto({"VimLeavePre"}, {command = "NvimTreeClose"})
 
-
 -- Spelling in markdown files}
 auto({"BufRead","BufNewFile"}, {
 	pattern = {"*.md"},
@@ -71,4 +70,4 @@ autocmd FileType markdown,rmarkdown,vimwiki
       \ autocmd CompleteDone * inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>
 ]]
 
-cmd[[autocmd VimEnter * silent :PackerSync]]
+cmd[[autocmd VimEnter * silent! :PackerSync]]
