@@ -44,7 +44,6 @@ let g:coc_global_extensions = [
 		\ "coc-jedi",
 		\ "coc-json",
 		\ "coc-lightbulb",
-		\ "coc-ltex",
 		\ "coc-lua",
 		\ "coc-markdown-preview-enhanced",
 		\ "coc-markmap",
