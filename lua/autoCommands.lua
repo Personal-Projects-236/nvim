@@ -62,11 +62,7 @@ let g:coc_global_extensions = [
 \ ]
 ]]
 
-cmd[[
-autocmd FileType markdown,rmarkdown,vimwiki 
-      \ inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>| 
-      \ autocmd CompleteChanged * silent! iunmap <CR>| 
-      \ autocmd CompleteDone * inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>
-]]
-
-cmd[[autocmd VimEnter * silent! :PackerSync]]
+auto({"VimEnter"}, {
+	pattern = "*",
+	command = "PackerSync"
+})

@@ -4,7 +4,7 @@ local packer = require("packer")
 
 vim.cmd([[packadd packer.nvim]])
 
-packer.startup(function()
+packer.startup({function()
 	-- Plugins are listed here
 	use("wbthomason/packer.nvim")
 	-- Plugin for auto pairing pairs together
@@ -107,4 +107,12 @@ packer.startup(function()
 	use({"aca/emmet-ls"})
 	use({"neovim/nvim-lspconfig"})
 	use "terrortylor/nvim-comment"
-end)
+end,
+config = {
+  display = {
+    open_fn = function()
+			return require('packer.util').float({ border = 'single' })
+    end
+  }
+}}
+)
