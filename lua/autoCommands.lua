@@ -62,7 +62,8 @@ let g:coc_global_extensions = [
 \ ]
 ]]
 
+-- NOTE: This is to update Packer and Coc when entering vim
 auto({"VimEnter"}, {
 	pattern = "*",
-	command = "PackerSync"
+	command = "AsyncRun PackerSync && CocUpdate"
 })

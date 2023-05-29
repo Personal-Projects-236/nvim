@@ -107,6 +107,7 @@ packer.startup({function()
 	use({"aca/emmet-ls"})
 	use({"neovim/nvim-lspconfig"})
 	use "terrortylor/nvim-comment"
+	use('skywind3000/asyncrun.vim')
 end,
 config = {
   display = {
