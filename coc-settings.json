@@ -32,5 +32,8 @@
 		"e": "open",
 		"s": "open:split",
 		"E": "open:vsplit"
+	},
+	"explorer.file.hiddenRules": {
+		"filenames": ["node_modules"]
 	}
 }
