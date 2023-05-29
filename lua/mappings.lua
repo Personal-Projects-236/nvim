@@ -1,12 +1,12 @@
 local mappings = vim.keymap.set
 local auto = vim.api.nvim_create_autocmd
 
-mappings('n', '<Leader>m', ':NvimTreeToggle<CR>') -- This will toggle the tree explorer`
 mappings('n', 'q', ':q<CR>') -- this will quit the terminal
 mappings('n', 'Q', ':qall<CR>') -- this quits all terminals
 mappings('n', '<c-g>', ':FloatermNew --width=1.0 --height=1.0 --autoclose=2 lazygit<CR>')
 mappings('n', 't', ':TodoTelescope keywords=TODO,PERF,HACK,NOTE,FIX,WARN<CR>')
-mappings('n', 'f', ':JsFixImport<CR>')
+mappings('n', '<c-f>', ':JsFixImport<CR>')
+mappings('n', 'm', ':CocCommand explorer --preset floating<CR>')
 
 -- Launch panel if nothing is typed after <leader>z
 mappings("n", "<leader>z", "<cmd>Telekasten panel<CR>")

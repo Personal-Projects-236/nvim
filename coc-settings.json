@@ -23,5 +23,17 @@
 	"tsserver.tsdk": ".yarn/sdks/typescript/lib",
 	"cSpell.userWords": ["Neovim", "autocommand"],
 	"suggest.enablePreselect": false,
-	"suggest.noselect": true
+	"suggest.noselect": true,
+
+	"explorer.quitOnOpen": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.keyMappings.global": {
+		"<cr>": ["wait", "expanded?", "collapse", "expand"],
+		"e": "open",
+		"s": "open:split",
+		"E": "open:vsplit"
+	},
+	"explorer.file.hiddenRules": {
+		"filenames": ["node_modules", "notebook", "spell"]
+	}
 }

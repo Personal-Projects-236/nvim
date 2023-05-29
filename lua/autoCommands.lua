@@ -63,6 +63,15 @@ let g:coc_global_extensions = [
 \ ]
 ]]
 
+cmd[[
+let g:coc_explorer_global_presets = {
+\   'floating': {
+\     'position': 'floating',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\ }
+]]
+
 -- NOTE: This is to update Packer and Coc when entering vim
 auto({"VimEnter"}, {
 	pattern = "*",

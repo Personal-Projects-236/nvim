@@ -34,12 +34,6 @@ packer.startup({function()
 		 	}
 		end,
 	})
-	use {
-  		'nvim-tree/nvim-tree.lua',
-  		requires = {
-			'nvim-tree/nvim-web-devicons', -- optional
-  		},
-	}
 	use('voldikss/vim-floaterm') 
 	use {
   		'lewis6991/gitsigns.nvim',

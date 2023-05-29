@@ -1,35 +1,3 @@
-
--- local function check_back_space()
---     local col = vim.fn.col('.') - 1
---     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil
--- end
---
--- local opts = { silent = true, noremap = true, expr = true, replace_keycodes = false }
---
--- vim.keymap.set("i", "<Tab>",
---     function()
---         if vim.fn['coc#pum#visible']() == 1 then
---             return vim.fn['coc#pum#next'](1)
---         end
---         if check_back_space() then
---             return vim.fn['coc#refresh']()
---         end
---         return "<Tab>"
---     end
---     , opts)
--- vim.keymap.set("i", "<S-Tab>", function()
---         if vim.fn['coc#pum#visible']() == 1 then
---             return vim.fn['coc#pum#prev'](1)
---         end
---         return "<S-Tab>"
--- end, opts)
--- vim.keymap.set("i", "<CR>", function()
---         if vim.fn['coc#pum#visible']() == 1 then
---             return vim.fn['coc#pum#confirm']();
---         end
---        return "\r"
--- end, opts)
-
 -- Some servers have issues with backup files, see #649
 vim.opt.backup = false
 vim.opt.writebackup = false
@@ -91,7 +59,6 @@ function _G.show_docs()
 end
 keyset("n", "K", '<CMD>lua _G.show_docs()<CR>', {silent = true})
 
-
 -- Highlight the symbol and its references on a CursorHold event(cursor is idle)
 vim.api.nvim_create_augroup("CocGroup", {})
 vim.api.nvim_create_autocmd("CursorHold", {
@@ -100,15 +67,12 @@ vim.api.nvim_create_autocmd("CursorHold", {
     desc = "Highlight symbol under cursor on CursorHold"
 })
 
-
 -- Symbol renaming
 keyset("n", "<leader>rn", "<Plug>(coc-rename)", {silent = true})
-
 
 -- Formatting selected code
 keyset("x", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
 keyset("n", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
-
 
 -- Setup formatexpr specified filetype(s)
 vim.api.nvim_create_autocmd("FileType", {
@@ -149,7 +113,6 @@ keyset("n", "<leader>r", "<Plug>(coc-codeaction-refactor-selected)", { silent = 
 -- Run the Code Lens actions on the current line
 keyset("n", "<leader>cl", "<Plug>(coc-codelens-action)", opts)
 
-
 -- Map function and class text objects
 -- NOTE: Requires 'textDocument.documentSymbol' support from the language server
 keyset("x", "if", "<Plug>(coc-funcobj-i)", opts)
@@ -160,7 +123,6 @@ keyset("x", "ic", "<Plug>(coc-classobj-i)", opts)
 keyset("o", "ic", "<Plug>(coc-classobj-i)", opts)
 keyset("x", "ac", "<Plug>(coc-classobj-a)", opts)
 keyset("o", "ac", "<Plug>(coc-classobj-a)", opts)
-
 
 -- Remap <C-f> and <C-b> to scroll float windows/popups
 ---@diagnostic disable-next-line: redefined-local
@@ -174,12 +136,10 @@ keyset("i", "<C-b>",
 keyset("v", "<C-f>", 'coc#float#has_scroll() ? coc#float#scroll(1) : "<C-f>"', opts)
 keyset("v", "<C-b>", 'coc#float#has_scroll() ? coc#float#scroll(0) : "<C-b>"', opts)
 
-
 -- Use CTRL-S for selections ranges
 -- Requires 'textDocument/selectionRange' support of language server
 keyset("n", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
 keyset("x", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
-
 
 -- Add `:Format` command to format current buffer
 vim.api.nvim_create_user_command("Format", "call CocAction('format')", {})
