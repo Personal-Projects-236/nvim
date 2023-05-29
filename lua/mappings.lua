@@ -7,6 +7,7 @@ mappings('n', '<c-g>', ':FloatermNew --width=1.0 --height=1.0 --autoclose=2 lazy
 mappings('n', 't', ':TodoTelescope keywords=TODO,PERF,HACK,NOTE,FIX,WARN<CR>')
 mappings('n', '<c-f>', ':JsFixImport<CR>')
 mappings('n', 'm', ':CocCommand explorer --preset floating<CR>')
+mappings('n', 's', ':CocCommand snippets.editSnippets<CR>')
 
 -- Launch panel if nothing is typed after <leader>z
 mappings("n", "<leader>z", "<cmd>Telekasten panel<CR>")
