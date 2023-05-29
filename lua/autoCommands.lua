@@ -16,7 +16,6 @@ auto({"FocusLost", "VimLeavePre", "BufWinLeave"}, {
 
 auto({"VimLeavePre"}, {command = "NvimTreeClose"})
 
-
 -- Spelling in markdown files}
 auto({"BufRead","BufNewFile"}, {
 	pattern = {"*.md"},
@@ -32,10 +31,39 @@ auto({"BufRead","BufNewFile"}, {
 })
 
 cmd[[
-autocmd FileType markdown,rmarkdown,vimwiki 
-      \ inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>| 
-      \ autocmd CompleteChanged * silent! iunmap <CR>| 
-      \ autocmd CompleteDone * inoremap <CR> <ESC>:VimwikiReturn 3 5<CR>
+let g:coc_global_extensions = [
+		\ "coc-css",
+		\ "coc-cssmodules",
+		\ "coc-docker",
+		\ "coc-explorer",
+		\ "coc-git",
+		\ "coc-html",
+		\ "coc-htmldjango",
+		\ "coc-htmlhint",
+		\ "coc-html-css-support",
+		\ "coc-jedi",
+		\ "coc-json",
+		\ "coc-lightbulb",
+		\ "coc-lua",
+		\ "coc-markdown-preview-enhanced",
+		\ "coc-markmap",
+		\ "coc-prisma",
+		\ "coc-pydocstring",
+		\ "@yaegassy/coc-pylsp",
+		\ "coc-pyright",
+		\ "coc-rome",
+		\ "@yaegassy/coc-ruff",
+		\ "coc-sh",
+		\ "coc-snippets",
+		\ "coc-sql",
+		\ "coc-sqlfluff",
+		\ "coc-sumneko-lua",
+		\ "coc-tsserver"
+\ ]
 ]]
 
-cmd[[autocmd VimEnter * silent :PackerSync]]
+-- NOTE: This is to update Packer and Coc when entering vim
+auto({"VimEnter"}, {
+	pattern = "*",
+	command = "AsyncRun PackerSync && CocUpdate"
+})
