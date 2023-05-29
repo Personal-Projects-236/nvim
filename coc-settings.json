@@ -1,0 +1,39 @@
+{
+	"cssmodules.camelCase": true,
+	"cssmodules.hintName": "cssmodules",
+	"emmet.includeLanguages": {
+		"vue-html": "html",
+		"javascript": "javascriptreact"
+	},
+	"emmet.excludeLanguages": [],
+	"html-css-support.enabledLanguages": [
+		"html",
+		"vue",
+		"blade",
+		"htmldjango",
+		"typescriptreact",
+		"javascriptreact"
+	],
+	"markdown-preview-enhanced.enableScriptExecution": true,
+	"coc.preferences.formatOnSaveFiletypes": ["prisma"],
+	"ruff.autoFixOnSave": true,
+	"eslint.packageManager": "yarn",
+	"eslint.nodePath": ".yarn/sdks",
+	"workspace.workspaceFolderCheckCwd": false,
+	"tsserver.tsdk": ".yarn/sdks/typescript/lib",
+	"cSpell.userWords": ["Neovim", "autocommand"],
+	"suggest.enablePreselect": false,
+	"suggest.noselect": true,
+
+	"explorer.quitOnOpen": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.keyMappings.global": {
+		"<cr>": ["wait", "expanded?", "collapse", "expand"],
+		"e": "open",
+		"s": "open:split",
+		"E": "open:vsplit"
+	},
+	"explorer.file.hiddenRules": {
+		"filenames": ["node_modules", "notebook", "spell"]
+	}
+}

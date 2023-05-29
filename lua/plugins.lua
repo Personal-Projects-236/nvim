@@ -4,19 +4,9 @@ local packer = require("packer")
 
 vim.cmd([[packadd packer.nvim]])
 
-packer.startup(function()
+packer.startup({function()
 	-- Plugins are listed here
 	use("wbthomason/packer.nvim")
-	-- Plugin for auto pairing pairs together
-	use{
-			'altermo/ultimate-autopair.nvim',
-			event={'InsertEnter','CmdlineEnter'},
-			config=function ()
-					require('ultimate-autopair').setup({
-									--Config goes here
-									})
-			end,
-	}
 	use({
 		"windwp/nvim-ts-autotag",
 		requires = "nvim-treesitter/nvim-treesitter"
@@ -25,12 +15,9 @@ packer.startup(function()
    		'renerocksai/telekasten.nvim',
    		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
   }
-	use({
-	       "ms-jpq/coq_nvim",
-	       branch = "coq",
-	})
-	use({"ms-jpq/coq.artifacts", branch = "artifacts"})
-	use({"ms-jpq/coq.thirdparty", branch = "3p"})
+	-- NOTE: completion engine
+	use { 'neoclide/coc.nvim', branch='release' }
+	-- NOTE: icons in neovim
 	use("ryanoasis/nerd-fonts")
 	use("nvim-tree/nvim-web-devicons")
 	use('folke/tokyonight.nvim') -- Color Scheme
@@ -47,12 +34,6 @@ packer.startup(function()
 		 	}
 		end,
 	})
-	use {
-  		'nvim-tree/nvim-tree.lua',
-  		requires = {
-			'nvim-tree/nvim-web-devicons', -- optional
-  		},
-	}
 	use('voldikss/vim-floaterm') 
 	use {
   		'lewis6991/gitsigns.nvim',
@@ -110,13 +91,13 @@ packer.startup(function()
 	use({"aca/emmet-ls"})
 	use({"neovim/nvim-lspconfig"})
 	use "terrortylor/nvim-comment"
-	-- prisma files
-	use({
-		"prisma/vim-prisma",
-		pattern = "*.prisma"
-	})
-	use({
-		"pantharshit00/coc-prisma",
-		pattern = "*.prisma"
-	})
-end)
+	use('skywind3000/asyncrun.vim')
+end,
+config = {
+  display = {
+    open_fn = function()
+			return require('packer.util').float({ border = 'single' })
+    end
+  }
+}}
+)

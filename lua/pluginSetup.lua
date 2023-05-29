@@ -1,4 +1,3 @@
-require("config/coq").setup()
 require("nvim-web-devicons").setup()
 require('lualine').setup {
   options = {
@@ -9,15 +8,6 @@ require('lualine').setup {
 }
 require('nvim-ts-autotag').setup({
   filetypes = { "html" , "xml", "markdown", "javascriptreact" },
-})
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
 })
 
 local home = vim.fn.expand("~/.config/nvim/notebook/notes")
@@ -61,7 +51,6 @@ require("stay-centered")
 require'lspconfig'.pyright.setup{}
 
 local lspconfig = require('lspconfig')
-local configs = require('lspconfig/configs')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
