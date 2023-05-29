@@ -58,7 +58,8 @@ let g:coc_global_extensions = [
 		\ "coc-sql",
 		\ "coc-sqlfluff",
 		\ "coc-sumneko-lua",
-		\ "coc-tsserver"
+		\ "coc-tsserver",
+		\ "coc-pairs"
 \ ]
 ]]
 
