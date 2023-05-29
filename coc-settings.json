@@ -34,6 +34,6 @@
 		"E": "open:vsplit"
 	},
 	"explorer.file.hiddenRules": {
-		"filenames": ["node_modules"]
+		"filenames": ["node_modules", "notebook", "spell"]
 	}
 }
