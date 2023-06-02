@@ -36,7 +36,6 @@ let g:coc_global_extensions = [
 		\ "coc-cssmodules",
 		\ "coc-docker",
 		\ "coc-explorer",
-		\ "coc-git",
 		\ "coc-html",
 		\ "coc-htmldjango",
 		\ "coc-htmlhint",
