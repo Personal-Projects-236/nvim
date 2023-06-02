@@ -10,18 +10,17 @@ require('nvim-ts-autotag').setup({
   filetypes = { "html" , "xml", "markdown", "javascriptreact" },
 })
 
-local home = vim.fn.expand("~/.config/nvim/notebook/notes")
-local journal = vim.fn.expand("~/.config/nvim/notebook")
+local home = vim.fn.expand("~/.config/nvim/notebook")
 
 require('telekasten').setup({
   home = home,
 	image_subdir = home,
   -- dir names for special notes (absolute path or subdir name)
-  dailies      = journal .. '/' .. 'daily',
-  weeklies     = journal .. '/' .. 'weekly',
-  templates    = journal .. '/' .. 'templates',
-  template_new_daily = journal .. '/' .. 'templates/daily.md',
-	template_new_note = journal .. '/' .. 'templates/new_note.md'
+  dailies      = home .. '/' .. 'daily',
+  weeklies     = home .. '/' .. 'weekly',
+  templates    = home .. '/' .. 'templates',
+  template_new_daily = home .. '/' .. 'templates/daily.md',
+	template_new_note = home .. '/' .. 'templates/new_note.md'
 })
 
 require('mkdnflow').setup({
