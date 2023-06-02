@@ -20,7 +20,8 @@ require('telekasten').setup({
   weeklies     = home .. '/' .. 'weekly',
   templates    = home .. '/' .. 'templates',
   template_new_daily = home .. '/' .. 'templates/daily.md',
-	template_new_note = home .. '/' .. 'templates/new_note.md'
+	template_new_note = home .. '/' .. 'templates/new_note.md',
+	command_palette_theme = 'popup'
 })
 
 require('mkdnflow').setup({
