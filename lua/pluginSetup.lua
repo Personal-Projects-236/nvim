@@ -85,3 +85,4 @@ require'web-tools'.setup({
     },
   },
 })
+require'colorizer'.setup()

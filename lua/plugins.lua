@@ -92,7 +92,9 @@ packer.startup({function()
 	use({"neovim/nvim-lspconfig"})
 	use "terrortylor/nvim-comment"
 	use('skywind3000/asyncrun.vim')
+	-- html and css plugins
 	use("ray-x/web-tools.nvim")
+	use("norcalli/nvim-colorizer.lua")
 end,
 config = {
   display = {
