@@ -34,6 +34,13 @@ auto({"FileType"}, {
 		mappings("n", "<C-t>", ":MarkdownPreview<CR>")
 	end
 })
+-- executes a live browser load of html documents
+auto({"FileType"}, {
+	pattern = {"html"},
+	callback = function ()
+		mappings("n", "<C-t>", ":BrowserOpen<CR>")
+	end
+})
 -- executes a javascript file only in javascript
 auto({"FileType"}, {
 	pattern = {"js", "javascript"},
