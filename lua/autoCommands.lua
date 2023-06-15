@@ -9,7 +9,7 @@ auto({"BufWritePost"}, {
 	command = "JsFixImport"
 })
 
-auto({"FocusLost", "VimLeavePre", "BufWinLeave"}, {
+auto({"FocusLost", "TabEnter", "QuitPre"}, {
 	pattern = {"*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
 	command = "PrettierAsync"
 })
