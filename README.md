@@ -27,6 +27,39 @@
 
 <hr>
 
+<h1>My configuration file for Lazygit</h1>
+
+<h2>A simple discription</h2>
+<ul>
+    <li>There should be a file called config.yml</li>
+    <li>Path to file: ~/.config/lazygit/config.yml</li>
+</ul>
+
+<h2>place the following in your config.yml file</h2>
+gui:
+  showIcons: true
+  branchColors:
+    'docs': '#11aaff'
+    'develop': '#d6642b'
+    'feat': '#38ebd6'
+    'feature': '#38ebd6'
+    'endpoint': '#f22235'
+  mainBranches: ['main']
+
+<hr>
+
+<h1>Installation Instructions</h1>
+
+<h2>How I installed Neovim to my system</h2>
+<p>sudo snap install nvim --classic</p>
+
+<h2>ripgrep is used to search the current directory when using Telescope</h2>
 Packages that need to be installed for certain plugins:
 - Ripgrep: $ sudo apt-get install ripgrep
     This is for using Telescope
+
+<h2>When you are wanting to load a live server for HTML documents?</h2>
+<p>Install browser-sync with npm</p>
+<p>$ npm install -g browser-sync</p>
+
+<hr>
