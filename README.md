@@ -58,4 +58,8 @@ Packages that need to be installed for certain plugins:
 - Ripgrep: $ sudo apt-get install ripgrep
     This is for using Telescope
 
+<h2>When you are wanting to load a live server for HTML documents?</h2>
+<p>Install browser-sync with npm</p>
+<p>$ npm install -g browser-sync</p>
+
 <hr>

@@ -3,11 +3,13 @@ local auto = vim.api.nvim_create_autocmd
 
 mappings('n', 'q', ':q<CR>') -- this will quit the terminal
 mappings('n', 'Q', ':qall<CR>') -- this quits all terminals
-mappings('n', '<c-g>', ':FloatermNew --width=1.0 --height=1.0 --autoclose=2 lazygit<CR>')
-mappings('n', 't', ':TodoTelescope keywords=TODO,PERF,HACK,NOTE,FIX,WARN<CR>')
+mappings('n', '<c-g>', ':FloatermNew --width=1.0 --height=1.0 --autoclose=2 lazygit<CR>') -- opens lazygit in full screen mode
+mappings('n', 't', ':TodoTelescope keywords=TODO,PERF,HACK,NOTE,FIX,WARN<CR>') -- searches projects for all keywords
 mappings('n', '<c-f>', ':JsFixImport<CR>')
-mappings('n', 'm', ':CocCommand explorer --preset floating<CR>')
-mappings('n', 's', ':CocCommand snippets.editSnippets<CR>')
+mappings('n', 'm', ':CocCommand explorer --preset floating<CR>') -- open file explorer in pop up window
+mappings('n', 's', ':CocCommand snippets.editSnippets<CR>') -- edit the snippets for the file that you are on
+mappings('n', '+', '<c-w>+') -- increase the window pane
+mappings('n', '-', '<c-w>-') -- decrease the window pane
 
 -- Launch panel if nothing is typed after <leader>z
 mappings("n", "<leader>z", "<cmd>Telekasten panel<CR>")
@@ -32,6 +34,13 @@ auto({"FileType"}, {
 	pattern = {"md", "markdown"},
 	callback = function()
 		mappings("n", "<C-t>", ":MarkdownPreview<CR>")
+	end
+})
+-- executes a live browser load of html documents
+auto({"FileType"}, {
+	pattern = {"html"},
+	callback = function ()
+		mappings("n", "<C-t>", ":BrowserOpen<CR>")
 	end
 })
 -- executes a javascript file only in javascript
