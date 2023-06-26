@@ -6,6 +6,16 @@ vim.cmd([[packadd packer.nvim]])
 
 packer.startup({function()
 	-- Plugins are listed here
+	-- general plugins
+	-- vimspector
+	use {
+		"puremourning/vimspector",
+		cmd = { "VimspectorInstall", "VimspectorUpdate" },
+		fn = { "vimspector#Launch()", "vimspector#ToggleBreakpoint", "vimspector#Continue" },
+		config = function()
+			require("config.vimspector").setup()
+		end,
+	}
 	use("wbthomason/packer.nvim")
 	use({
 		"windwp/nvim-ts-autotag",
