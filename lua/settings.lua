@@ -11,5 +11,6 @@ set.tabstop = 2
 set.softtabstop = 2
 set.shiftwidth = 2
 set.termguicolors = true
+set.wrap = false
 
 g.js_file_import_strip_file_extension = 0
