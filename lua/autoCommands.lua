@@ -1,30 +1,30 @@
 local auto = vim.api.nvim_create_autocmd
 local cmd = vim.cmd
 
-auto({"BufLeave"}, {command = "BDelete hidden"})
+auto({ "BufLeave" }, { command = "BDelete hidden" })
 
-auto({"FocusLost", "TabEnter", "QuitPre"}, {
-	pattern = {"*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
+auto({ "FocusLost", "TabEnter" }, {
+	pattern = { "*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json" },
 	command = "PrettierAsync"
 })
 
-auto({"VimLeavePre"}, {command = "NvimTreeClose"})
+auto({ "VimLeavePre" }, { command = "NvimTreeClose" })
 
 -- Spelling in markdown files}
-auto({"BufRead","BufNewFile"}, {
-	pattern = {"*.md"},
+auto({ "BufRead", "BufNewFile" }, {
+	pattern = { "*.md" },
 	command = "setlocal spell"
 })
-auto({"BufRead","BufNewFile"}, {
-	pattern = {"*.md"},
+auto({ "BufRead", "BufNewFile" }, {
+	pattern = { "*.md" },
 	command = "setlocal spell spelllang=en_gb"
 })
-auto({"BufRead","BufNewFile"}, {
-	pattern = {"*.md"},
+auto({ "BufRead", "BufNewFile" }, {
+	pattern = { "*.md" },
 	command = "set complete+=kspell"
 })
 
-cmd[[
+cmd [[
 let g:coc_global_extensions = [
 		\ "coc-css",
 		\ "coc-cssmodules",
@@ -58,7 +58,7 @@ let g:coc_global_extensions = [
 \ ]
 ]]
 
-cmd[[
+cmd [[
 let g:coc_explorer_global_presets = {
 \   'floating': {
 \     'position': 'floating',
@@ -68,16 +68,16 @@ let g:coc_explorer_global_presets = {
 ]]
 
 -- NOTE: This will expand the snippet
-cmd[[
+cmd [[
 imap <C-l> <Plug>(coc-snippets-expand)
 ]]
 
-cmd[[
+cmd [[
 let g:coc_snippet_next = '<c-j>'
 ]]
 
 -- NOTE: This is to update Packer and Coc when entering vim
-auto({"VimEnter"}, {
+auto({ "VimEnter" }, {
 	pattern = "*",
 	command = "AsyncRun PackerSync && CocUpdate"
 })

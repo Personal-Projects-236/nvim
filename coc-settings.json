@@ -16,7 +16,7 @@
 	],
 	"markdown-preview-enhanced.enableScriptExecution": true,
 	"coc.preferences.extensionUpdateCheck": "daily",
-	"coc.preferences.formatOnSave": true,
+	"coc.preferences.formatOnSave": false,
 	"coc.preferences.formatOnType": true,
 	"ruff.autoFixOnSave": true,
 	"workspace.workspaceFolderCheckCwd": false,
@@ -34,5 +34,7 @@
 	"explorer.file.hiddenRules": {
 		"filenames": ["node_modules", "notebook", "spell"]
 	},
-	"python.formatting.provider": "autopep8"
+	"python.formatting.provider": "black",
+	"htmldjango.enable": true,
+	"htmldjango.completion.enable": true
 }
