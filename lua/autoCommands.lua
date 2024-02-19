@@ -3,12 +3,6 @@ local cmd = vim.cmd
 
 auto({"BufLeave"}, {command = "BDelete hidden"})
 
--- auto commands for javascript files
-auto({"BufWritePost"}, {
-	pattern = {"*.js", "*.jsx", "*.mjs"},
-	command = "JsFixImport"
-})
-
 auto({"FocusLost", "TabEnter", "QuitPre"}, {
 	pattern = {"*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json"},
 	command = "PrettierAsync"
@@ -59,7 +53,8 @@ let g:coc_global_extensions = [
 		\ "coc-sqlfluff",
 		\ "coc-sumneko-lua",
 		\ "coc-tsserver",
-		\ "coc-pairs"
+		\ "coc-pairs",
+		\ "coc-python"
 \ ]
 ]]
 

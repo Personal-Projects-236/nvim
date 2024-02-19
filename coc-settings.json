@@ -15,16 +15,14 @@
 		"javascriptreact"
 	],
 	"markdown-preview-enhanced.enableScriptExecution": true,
-	"coc.preferences.formatOnSaveFiletypes": ["prisma"],
+	"coc.preferences.extensionUpdateCheck": "daily",
+	"coc.preferences.formatOnSave": true,
+	"coc.preferences.formatOnType": true,
 	"ruff.autoFixOnSave": true,
-	"eslint.packageManager": "yarn",
-	"eslint.nodePath": ".yarn/sdks",
 	"workspace.workspaceFolderCheckCwd": false,
 	"tsserver.tsdk": ".yarn/sdks/typescript/lib",
-	"cSpell.userWords": ["Neovim", "autocommand"],
 	"suggest.enablePreselect": false,
 	"suggest.noselect": true,
-
 	"explorer.quitOnOpen": true,
 	"explorer.icon.enableNerdfont": true,
 	"explorer.keyMappings.global": {
@@ -35,5 +33,6 @@
 	},
 	"explorer.file.hiddenRules": {
 		"filenames": ["node_modules", "notebook", "spell"]
-	}
+	},
+	"python.formatting.provider": "autopep8"
 }

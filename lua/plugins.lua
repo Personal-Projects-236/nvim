@@ -67,15 +67,12 @@ packer.startup({function()
 		requires = "nvim-lua/plenary.nvim",
 		config = function()
 			require("todo-comments").setup {
-				-- your configuration comes here
-				-- or leave it empty to use the default settings
-				-- refer to the configuration section below
-			}
-		end
-	}
-	use({"kristijanhusak/vim-js-file-import"}, {
-		requires = "ludovicchabant/vim-gutentags"
-	})
+					-- your configuration comes here
+					-- or leave it empty to use the default settings
+					-- refer to the configuration section below
+				}
+			end
+		}
 	use("tomarrell/vim-npr")
 	-- markdown language support
 	use({
