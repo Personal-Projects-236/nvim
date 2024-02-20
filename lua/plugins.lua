@@ -53,10 +53,10 @@ packer.startup({function()
 	}
 	use('nvim-lua/plenary.nvim')
 	use('kazhala/close-buffers.nvim')
-	use({
-		'prettier/vim-prettier',
-		pattern = {"*.js", "*.jsx","*.mjs", "*.html", "*.css", "*.lua", "*.ts", "*.tsx", "*.sass"}
-	})
+	-- use({
+	-- 	'prettier/vim-prettier',
+	-- 	pattern = {"*.js", "*.jsx","*.mjs", "*.html", "*.css", "*.lua", "*.ts", "*.tsx", "*.sass"}
+	-- })
 	use({ 
 		"iamcco/markdown-preview.nvim",
 		run = "cd app && npm install",

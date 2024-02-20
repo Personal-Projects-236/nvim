@@ -3,9 +3,14 @@ local cmd = vim.cmd
 
 auto({ "BufLeave" }, { command = "BDelete hidden" })
 
-auto({ "FocusLost", "TabEnter" }, {
-	pattern = { "*.js", "*.jsx", "*.mjs", "*.ts", "*.tsx", "*.html", "*.css", "*.sass", "*.json" },
-	command = "PrettierAsync"
+auto({ "FocusLost"}, {
+	pattern = { "*.js", "*.jsx", "*.mjs", "*.cjs", "*.ts", "*.tsx", "*.css", "*.sass", "*.json" },
+	command = "CocCommand prettier.formatFile"
+})
+
+auto({"FocusLost"}, {
+  pattern = { "*.html" },
+	command = "CocCommand htmldjango.djlint.format"
 })
 
 auto({ "VimLeavePre" }, { command = "NvimTreeClose" })
@@ -42,6 +47,7 @@ let g:coc_global_extensions = [
 		\ "coc-markdown-preview-enhanced",
 		\ "coc-markmap",
 		\ "coc-prisma",
+		\ "coc-prettier",
 		\ "coc-pydocstring",
 		\ "@yaegassy/coc-pylsp",
 		\ "coc-pyright",
