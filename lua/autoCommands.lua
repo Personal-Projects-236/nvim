@@ -63,27 +63,3 @@ let g:coc_global_extensions = [
 		\ "coc-python"
 \ ]
 ]]
-
-cmd [[
-let g:coc_explorer_global_presets = {
-\   'floating': {
-\     'position': 'floating',
-\     'open-action-strategy': 'sourceWindow',
-\   },
-\ }
-]]
-
--- NOTE: This will expand the snippet
-cmd [[
-imap <C-l> <Plug>(coc-snippets-expand)
-]]
-
-cmd [[
-let g:coc_snippet_next = '<c-j>'
-]]
-
--- NOTE: This is to update Packer and Coc when entering vim
-auto({ "VimEnter" }, {
-	pattern = "*",
-	command = "AsyncRun PackerSync && CocUpdate"
-})
