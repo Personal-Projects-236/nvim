@@ -3,14 +3,18 @@ local cmd = vim.cmd
 
 auto({ "BufLeave" }, { command = "BDelete hidden" })
 
+-- autocommands to auto format code on FocusLost
 auto({ "FocusLost"}, {
 	pattern = { "*.js", "*.jsx", "*.mjs", "*.cjs", "*.ts", "*.tsx", "*.css", "*.sass", "*.json" },
 	command = "CocCommand prettier.formatFile"
 })
-
 auto({"FocusLost"}, {
   pattern = { "*.html" },
 	command = "CocCommand htmldjango.djlint.format"
+})
+auto({"FocusLost"}, {
+  pattern = { "*.py " },
+	command = "Autoformat"
 })
 
 auto({ "VimLeavePre" }, { command = "NvimTreeClose" })

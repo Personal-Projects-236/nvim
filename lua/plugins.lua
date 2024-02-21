@@ -35,6 +35,8 @@ packer.startup({function()
 	  'nvim-lualine/lualine.nvim',
 	  requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
+	-- formater
+	use "vim-autoformat/vim-autoformat"
 	use({
 		"Pocco81/auto-save.nvim",
 		config = function()

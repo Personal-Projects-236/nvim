@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
   },
+  ["vim-autoformat"] = {
+    loaded = true,
+    path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-autoformat",
+    url = "https://github.com/vim-autoformat/vim-autoformat"
+  },
   ["vim-floaterm"] = {
     loaded = true,
     path = "/home/douglas/.local/share/nvim/site/pack/packer/start/vim-floaterm",
