@@ -63,3 +63,12 @@ let g:coc_global_extensions = [
 		\ "coc-python"
 \ ]
 ]]
+
+cmd [[
+let g:coc_explorer_global_presets = {
+\   'floating': {
+\     'position': 'floating',
+\     'open-action-strategy': 'sourceWindow',
+\   },
+\ }
+]]
