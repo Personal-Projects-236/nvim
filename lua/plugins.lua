@@ -81,15 +81,17 @@ packer.startup({function()
 	})
 	use({'jakewvincent/mkdnflow.nvim'})
 
-	use {
-		'rmagatti/auto-session',
-		config = function()
-			require("auto-session").setup {
-				log_level = "error",
-				auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
-			}
-		end
-	}
+	-- sessions
+  use "shatur/neovim-session-manager"
+	-- use {
+	-- 	'rmagatti/auto-session',
+	-- 	config = function()
+	-- 		require("auto-session").setup {
+	-- 			log_level = "error",
+	-- 			auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+	-- 		}
+	-- 	end
+	-- }
 	use "arnamak/stay-centered.nvim"
 	use({
 		"nvim-telescope/telescope.nvim",

@@ -34,17 +34,28 @@ require('mkdnflow').setup({
 	}
 })
 
-require("auto-session").setup {
-  log_level = "error",
+local Path = require('plenary.path')
+local config = require('session_manager.config')
 
-  cwd_change_handling = {
-    restore_upcoming_session = true, -- already the default, no need to specify like this, only here as an example
-    pre_cwd_changed_hook = nil, -- already the default, no need to specify like this, only here as an example
-    post_cwd_changed_hook = function() -- example refreshing the lualine status line _after_ the cwd changes
-      require("lualine").refresh() -- refresh lualine so the new session name is displayed in the status bar
-    end,
-  },
+require("session_manager").setup {
+    session_dir = Path:new(vim.fn.stdpath('data'), 'sessions'),
+		autoload_mode = config.AutoloadMode.LastSession,
+		autosave_last_session = true,
+    autosave_ignore_filetypes = {
+			"snippets"
+	}
 }
+-- require("auto-session").setup {
+--   log_level = "error",
+--
+--   cwd_change_handling = {
+--     restore_upcoming_session = true, -- already the default, no need to specify like this, only here as an example
+--     pre_cwd_changed_hook = nil, -- already the default, no need to specify like this, only here as an example
+--     post_cwd_changed_hook = function() -- example refreshing the lualine status line _after_ the cwd changes
+--       require("lualine").refresh() -- refresh lualine so the new session name is displayed in the status bar
+--     end,
+--   },
+-- }
 
 require("stay-centered")
 
