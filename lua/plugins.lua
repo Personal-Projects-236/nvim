@@ -99,10 +99,11 @@ packer.startup({function()
 			"nvim-telescope/telescope.nvim",
 			requires = {
 				"nvim-telescope/telescope-live-grep-args.nvim",
-				"nvim-lua/plenary.nvim"
-            },
+				"nvim-lua/plenary.nvim",
+				"nvim-lua/popup.nvim",
+			},
 			config = function ()
-				require("telescope").load_extension("live_grep.args")
+				require("telescope").load_extension("live_grep_args")
 			end
 		})
 		use({"aca/emmet-ls"})
@@ -112,6 +113,10 @@ packer.startup({function()
 		-- html and css plugins
 		use("ray-x/web-tools.nvim")
 		use("norcalli/nvim-colorizer.lua")
+		use("nvim-lua/popup.nvim")
+		use("nvim-lua/plenary.nvim")
+		use("nvim-telescope/telescope.nvim")
+		use("nvim-telescope/telescope-media-files.nvim")
 	end,
 	config = {
 		display = {
