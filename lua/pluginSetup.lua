@@ -39,7 +39,7 @@ local config = require('session_manager.config')
 
 require("session_manager").setup {
 	session_dir = Path:new(vim.fn.stdpath('data'), 'sessions'),
-	autoload_mode = config.AutoloadMode.LastSession,
+	-- autoload_mode = config.AutoloadMode.LastSession,
 	autosave_last_session = true,
 	autosave_ignore_filetypes = {
 		"snippets"
@@ -116,4 +116,24 @@ require'telescope'.setup({
 			find_cmd = "rg"
 		}
 	}
+})
+
+-- test
+require("neotest").setup({
+	adaptors = {
+		require("neotest-python")({
+			dap = {justMyCode = false},
+            runner = "unittest",
+			python = "venv/bin/python",
+			is_test_file = function (filename)
+				return filename:match("test_.+%.py$")
+			end,
+			pytest_discover_instances = true
+		}),
+		require("neotest-plenary"),
+	}
+})
+
+require("neodev").setup({
+	library = {enabled = true, plugins = {"neotest"}, types=true}
 })

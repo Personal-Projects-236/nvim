@@ -23,7 +23,7 @@ packer.startup({function()
 	})
 	use {
 		'renerocksai/telekasten.nvim',
-		requires = {'nvim-telescope/telescope.nvim', 'renerocksai/calendar-vim'}
+		requires = {'renerocksai/calendar-vim'}
 	}
 	-- NOTE: completion engine
 	use { 'neoclide/coc.nvim', branch='release' }
@@ -66,7 +66,6 @@ packer.startup({function()
 		ft = { "markdown" }, })
 		use {
 			"folke/todo-comments.nvim",
-			requires = "nvim-lua/plenary.nvim",
 			config = function()
 				require("todo-comments").setup {
 					-- your configuration comes here
@@ -77,10 +76,6 @@ packer.startup({function()
 		}
 		use("tomarrell/vim-npr")
 		-- markdown language support
-		use({
-			"iamcco/markdown-preview.nvim",
-			run = function() vim.fn["mkdp#util#install"]() end,
-		})
 		use({'jakewvincent/mkdnflow.nvim'})
 
 		-- sessions
@@ -99,7 +94,6 @@ packer.startup({function()
 			"nvim-telescope/telescope.nvim",
 			requires = {
 				"nvim-telescope/telescope-live-grep-args.nvim",
-				"nvim-lua/plenary.nvim",
 				"nvim-lua/popup.nvim",
 			},
 			config = function ()
@@ -114,9 +108,20 @@ packer.startup({function()
 		use("ray-x/web-tools.nvim")
 		use("norcalli/nvim-colorizer.lua")
 		use("nvim-lua/popup.nvim")
-		use("nvim-lua/plenary.nvim")
-		use("nvim-telescope/telescope.nvim")
 		use("nvim-telescope/telescope-media-files.nvim")
+		-- test
+		use({
+			"nvim-neotest/neotest",
+			requires = {
+				"nvim-lua/plenary.nvim",
+				"nvim-treesitter/nvim-treesitter"
+			}
+		})
+		use("nvim-neotest/neotest-plenary")
+		use("nvim-neotest/neotest-python")
+		use({
+			"folke/neodev.nvim"
+		})
 	end,
 	config = {
 		display = {
